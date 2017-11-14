@@ -454,7 +454,7 @@ It also can add a delay to wait for spindle to run on full speed.
 #define ACK_WITH_LINENUMBER 1
 #define WAITING_IDENTIFIER "wait"
 #define ECHO_ON_EXECUTE 1
-#define EEPROM_MODE 0
+#define EEPROM_MODE 1
 #undef PS_ON_PIN
 #define PS_ON_PIN ORIG_PS_ON_PIN
 #define JSON_OUTPUT 0
@@ -613,7 +613,7 @@ Values must be in range 1..255
     "zStepsPerMM": 80,
     "xInvert": "1",
     "xInvertEnable": 0,
-    "eepromMode": 0,
+    "eepromMode": 1,
     "yInvert": "1",
     "yInvertEnable": 0,
     "zInvert": "1",
