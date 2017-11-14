@@ -72,7 +72,7 @@
 #define PDM_FOR_EXTRUDER 0
 #define PDM_FOR_COOLER 0
 #define DECOUPLING_TEST_MAX_HOLD_VARIANCE 30
-#define DECOUPLING_TEST_MIN_TEMP_RISE 0.2
+#define DECOUPLING_TEST_MIN_TEMP_RISE 0.1
 #define KILL_IF_SENSOR_DEFECT 0
 #define RETRACT_ON_PAUSE 4
 #define PAUSE_START_COMMANDS ""
@@ -221,7 +221,7 @@
 #define HEATED_BED_PID_IGAIN   33
 #define HEATED_BED_PID_DGAIN 290
 #define HEATED_BED_PID_MAX 255
-#define HEATED_BED_DECOUPLE_TEST_PERIOD 2000000
+#define HEATED_BED_DECOUPLE_TEST_PERIOD 10000000
 #define MIN_EXTRUDER_TEMP 160
 #define MAXTEMP 245
 #define MIN_DEFECT_TEMPERATURE -10
@@ -905,7 +905,7 @@ Values must be in range 1..255
     "bedPidI": 33,
     "bedPidD": 290,
     "bedPidMax": 255,
-    "bedDecoupleTestPeriod": 2000,
+    "bedDecoupleTestPeriod": 10000,
     "caseLightPin": -1,
     "caseLightDefaultOn": "1",
     "bedSkipIfWithin": 5,
@@ -1019,7 +1019,7 @@ Values must be in range 1..255
     "psOn": "ORIG_PS_ON_PIN",
     "mixingExtruder": "0",
     "decouplingTestMaxHoldVariance": 30,
-    "decouplingTestMinTempRise": 0.2,
+    "decouplingTestMinTempRise": 0.1,
     "featureAxisComp": "1",
     "axisCompTanXY": 0,
     "axisCompTanXZ": 0,
