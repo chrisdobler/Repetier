@@ -221,7 +221,7 @@
 #define HEATED_BED_PID_IGAIN   33
 #define HEATED_BED_PID_DGAIN 290
 #define HEATED_BED_PID_MAX 255
-#define HEATED_BED_DECOUPLE_TEST_PERIOD 10000000
+#define HEATED_BED_DECOUPLE_TEST_PERIOD 0
 #define MIN_EXTRUDER_TEMP 160
 #define MAXTEMP 245
 #define MIN_DEFECT_TEMPERATURE -10
@@ -905,7 +905,7 @@ Values must be in range 1..255
     "bedPidI": 33,
     "bedPidD": 290,
     "bedPidMax": 255,
-    "bedDecoupleTestPeriod": 10000,
+    "bedDecoupleTestPeriod": 0,
     "caseLightPin": -1,
     "caseLightDefaultOn": "1",
     "bedSkipIfWithin": 5,
